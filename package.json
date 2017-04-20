@@ -1,0 +1,14 @@
+{
+  "name": "hala_proj",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:NikolayKul/HalaProj.git"
+  },
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 1"
+  },
+  "author": "NikolayKul"
+}
