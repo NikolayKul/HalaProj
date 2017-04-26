@@ -13,6 +13,7 @@
   },
   "author": "NikolayKul",
   "dependencies": {
+    "dotenv": "^4.0.0",
     "express": "^4.15.2"
   }
 }
