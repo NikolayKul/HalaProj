@@ -2,13 +2,17 @@
   "name": "hala_proj",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git@github.com:NikolayKul/HalaProj.git"
   },
   "scripts": {
+    "start": "node start.js",
     "test": "echo \"No test specified\" && exit 1"
   },
-  "author": "NikolayKul"
+  "author": "NikolayKul",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
