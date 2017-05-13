@@ -1,8 +1,10 @@
-require('dotenv').config()
+import dotenv from 'dotenv'
+import express from 'express'
+import logger from './utils/logger'
 
-const express = require('express'),
-  app = express(),
-  logger = require('./utils/logger'),
+dotenv.config()
+
+const app = express(),
   PORT = process.env.PORT || 3000
 
 app.get('/', (req, res) => res.send('Hello world!'))

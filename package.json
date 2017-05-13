@@ -8,12 +8,18 @@
     "url": "git@github.com:NikolayKul/HalaProj.git"
   },
   "scripts": {
-    "start": "node start.js",
+    "start": "nodemon start.js --exec babel-node --presets es2015,stage-2",
+    "start:prod": "babel-node start.js",
     "test": "echo \"No test specified\" && exit 1"
   },
   "author": "NikolayKul",
   "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.11.6",
     "dotenv": "^4.0.0",
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "nodemon": "^1.11.0"
   }
 }
