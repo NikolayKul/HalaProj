@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "nodemon server --exec babel-node",
+    "debug": "nodemon server --exec babel-node --inspect",
     "start:prod": "npm run clean && npm run build:server && node server-build",
     "build:server": "babel ./server -d ./server-build -s",
     "clean": "rimraf ./server-build",
