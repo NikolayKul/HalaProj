@@ -8,8 +8,8 @@
     "url": "git@github.com:NikolayKul/HalaProj.git"
   },
   "scripts": {
-    "start": "nodemon start.js --exec babel-node",
-    "start:prod": "node start.js",
+    "start": "nodemon server --exec babel-node",
+    "start:prod": "node server",
     "slate": "rimraf node_modules && npm install",
     "test": "echo \"No test specified\" && exit 1"
   },
