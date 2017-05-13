@@ -1,2 +1,5 @@
 // just a base logger for now
-module.exports = console.log
+const logger = value => console.log(value)
+logger.e = value => console.error(value)
+
+export default logger

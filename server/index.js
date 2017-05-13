@@ -7,7 +7,7 @@ dotenv.config()
 const app = express()
 app.get('/', (req, res) => res.send('Hello world!'))
 app.use((err, req, res, next) => {
-  console.error(err.stack)
+  logger.e(err.stack)
   res.status(500).send("Something went wrong")
 })
 
