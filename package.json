@@ -9,8 +9,9 @@
   },
   "scripts": {
     "start": "nodemon server --exec babel-node",
-    "start:prod": "node server",
-    "slate": "rimraf node_modules && npm install",
+    "start:prod": "npm run clean && npm run build:server && node server-build",
+    "build:server": "babel ./server -d ./server-build -s",
+    "clean": "rimraf ./server-build",
     "test": "echo \"No test specified\" && exit 1"
   },
   "author": "NikolayKul",
